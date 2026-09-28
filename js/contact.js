@@ -165,7 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle form submission with feedback
   const handleFormSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
     const form = e.target;
     const submitBtn = form.querySelector(".submit-btn"); // Submit button
     const successMessage = document.getElementById("successMessage"); // Success message element

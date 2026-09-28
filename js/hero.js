@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const isHomePage = document.querySelector(".page.home-page");
   if (!isHomePage) return;
 
+  
   // Register ScrollTrigger plugin with GSAP
   gsap.registerPlugin(ScrollTrigger);
 

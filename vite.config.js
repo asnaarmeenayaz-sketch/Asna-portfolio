@@ -7,8 +7,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "index.html"),
         contact: resolve(__dirname, "contact.html"),
+        projects: resolve(__dirname, "projects.html"),
       },
     },
+
     assetsInclude: [
       "**/*.jpeg",
       "**/*.jpg",
@@ -16,6 +18,7 @@ export default defineConfig({
       "**/*.svg",
       "**/*.gif",
     ],
+
     copyPublicDir: true,
   },
 });
