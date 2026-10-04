@@ -347,15 +347,23 @@ footer {
     border-radius: 2.5em;
   }
 
-  /* Footer main heading */
+
+  /* =======================================================
+     FOOTER MAIN HEADING
+  ======================================================= */
+
   footer .footer-header h1 {
     font-size: clamp(5rem, 7vw, 9rem);
   }
 
-  /* Footer columns */
+
+  /* =======================================================
+     FOOTER COLUMNS
+  ======================================================= */
+
   footer .footer-row {
     gap: 4em;
-    margin-bottom: 10em;
+    margin-bottom: 7em;
   }
 
   footer .footer-col {
@@ -363,71 +371,99 @@ footer {
   }
 
   footer .footer-col p:first-child {
-    font-size: 3.3rem;
+    font-size: 2rem;
   }
 
   footer .footer-col a,
   footer .footer-col p {
-    font-size: 1.39rem;
-    gap: 5em;
+    font-size: 1rem;
+    gap: 2em;
   }
 
-  /* Copyright */
+
+  /* =======================================================
+     COPYRIGHT
+  ======================================================= */
+
   footer .copyright-info {
-    font-size: 10rem;
-    gap: 3em;
+    font-size: 1rem;
+    gap: 2em;
   }
 
-  /* Right cream circle */
+
+  /* =======================================================
+     RIGHT CREAM CIRCLE
+  ======================================================= */
+
   footer::before {
-    width: 1300px;
-    height: 1300px;
-    right: -180px;
-    top: -5%;
+    width: 900px;
+    height: 900px;
+    right: -220px;
+    top: -8%;
   }
 
-  /* Right gold curved line */
+
+  /* =======================================================
+     RIGHT GOLD CURVED LINE
+  ======================================================= */
+
   footer::after {
-    width: 1050px;
-    height: 1050px;
-    right: -140px;
+    width: 780px;
+    height: 780px;
+    right: -180px;
     top: 2%;
   }
 
-  /* Left cream circle */
+
+  /* =======================================================
+     LEFT CREAM CIRCLE
+  ======================================================= */
+
   footer .footer-container::before {
-    width: 1000px;
-    height: 1000px;
-    left: -300px;
+    width: 750px;
+    height: 750px;
+    left: -280px;
     top: 45%;
   }
 
-  /* Left gold curved line */
+
+  /* =======================================================
+     LEFT GOLD CURVED LINE
+  ======================================================= */
+
   footer .footer-container::after {
-    width: 900px;
-    height: 900px;
-    left: -260px;
+    width: 680px;
+    height: 680px;
+    left: -240px;
     top: 48%;
   }
 
-  /* Footer symbols */
+
+  /* =======================================================
+     FOOTER SYMBOLS
+  ======================================================= */
+
   footer .footer-symbols {
-    padding: 2.5em 3em;
+    padding: 2em 3em;
   }
 
   footer .footer-symbols img {
-    height: 2.5rem;
+    height: 2rem;
   }
-/* Footer explosion - Dell / Large Desktop */
 
+
+  /* =======================================================
+     FOOTER EXPLOSION
+  ======================================================= */
 
   footer .explosion-container {
-    height: 240%;
+    height: 180%;
   }
 
   footer .explosion-particle-img {
-    width: 500px !important;
+    width: 350px !important;
     max-width: none !important;
     bottom: 50px !important;
   }
+
 }

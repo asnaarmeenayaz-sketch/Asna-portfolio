@@ -1435,16 +1435,11 @@ a {
 
   .projects-page {
     width: 100%;
-
     max-width: none;
-
     margin: 0;
-
     padding-left: 4vw;
-
     padding-right: 4vw;
-
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 
 
@@ -1454,23 +1449,16 @@ a {
 
   .project-item,
   .project-item:nth-child(even) {
-
     display: grid;
-
     align-items: center;
-
     gap: clamp(3rem, 5vw, 6rem);
-
-    padding-top: 8rem;
-
-    padding-bottom: 9rem;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
   }
-
 
   .project-item {
     grid-template-columns: 1.15fr 0.85fr;
   }
-
 
   .project-item:nth-child(even) {
     grid-template-columns: 0.85fr 1.15fr;
@@ -1505,9 +1493,7 @@ a {
 
   .project-visual {
     width: 100%;
-
     min-width: 0;
-
     aspect-ratio: 16 / 10;
   }
 
@@ -1518,16 +1504,13 @@ a {
 
   .project-visual-vertical {
     aspect-ratio: 520 / 990;
-
     background: transparent;
   }
 
   .project-visual-vertical img {
     width: 100%;
     height: 100%;
-
     object-fit: contain;
-
     background: transparent;
   }
 
@@ -1568,16 +1551,15 @@ a {
   }
 
 
-  /* Vertical image containers */
+  /* =======================================================
+     VERTICAL IMAGE CONTAINERS
+  ======================================================= */
 
   .project-item:nth-child(9) .project-visual,
   .project-item:nth-child(10) .project-visual {
     aspect-ratio: 520 / 990;
-
     background: transparent;
-
     position: relative;
-
     overflow: hidden;
   }
 
@@ -1588,11 +1570,8 @@ a {
   .project-item:nth-child(10) .project-visual img {
     width: 100%;
     height: 100%;
-
     object-fit: contain;
-
     display: block;
-
     background: transparent;
   }
 
@@ -1602,15 +1581,10 @@ a {
   .project-item:nth-child(9) .project-visual::after,
   .project-item:nth-child(10) .project-visual::after {
     content: "";
-
     position: absolute;
-
     inset: 0;
-
     border: 1px solid rgba(199, 167, 122, 0.25);
-
     pointer-events: none;
-
     z-index: 0;
   }
 
@@ -1620,31 +1594,23 @@ a {
   ======================================================= */
 
   .project-info {
-    width: 300%;
-
-    max-width: 800px;
+    width: 100%;
+    max-width: 700px;
   }
 
   .project-title {
-    font-size: clamp(3rem, 4vw, 9.5rem);
-
+    font-size: clamp(3rem, 4vw, 7rem);
     color: var(--text-main);
-
     font-family: var(--font-display);
-
     line-height: 1;
-
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 
   .project-description {
-    max-width: 1000px;
-
-    font-size: 2.0rem;
-
-    line-height: 1.9;
-
-    margin-bottom: 2.2rem;
+    max-width: 700px;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
   }
 
 
@@ -1654,24 +1620,19 @@ a {
 
   .projects-header {
     max-width: none;
-
     margin: 0;
-
     padding-left: 4vw;
-
     padding-right: 4vw;
-
-    padding-top: 3rem;
-
-    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .projects-logo {
-    font-size: 3.8rem !important;
+    font-size: 3rem !important;
   }
 
   .projects-back {
-    font-size: 1.55rem !important;
+    font-size: 1.2rem !important;
   }
 
 
@@ -1680,45 +1641,38 @@ a {
   ======================================================= */
 
   .projects-intro {
-    max-width: 1500px;
-
-    margin-bottom: 10rem;
+    max-width: 1200px;
+    margin-bottom: 8rem;
   }
 
 
   /* SELECTED WORK */
 
   .projects-label {
-    font-size: 2rem !important;
-
+    font-size: 1.1rem !important;
     letter-spacing: 0.22em;
-
-    margin-bottom: 1.9rem;
+    margin-bottom: 1.5rem;
   }
 
   .projects-label::before {
-    width: 70px;
+    width: 60px;
   }
 
 
   /* MAIN HEADING */
 
   .projects-intro h1 {
-    font-size: clamp(6rem, 9vw, 15rem) !important;
-
-    line-height: 0.89;
-
-    margin-bottom: 2.7rem;
+    font-size: clamp(5rem, 7vw, 9rem) !important;
+    line-height: 0.9;
+    margin-bottom: 2.3rem;
   }
 
 
   /* INTRO DESCRIPTION */
 
   .projects-intro .projects-description {
-    max-width: 890px;
-
-    font-size: 1.69rem !important;
-
+    max-width: 800px;
+    font-size: 1.25rem !important;
     line-height: 1.8;
   }
 
@@ -1728,28 +1682,19 @@ a {
   ======================================================= */
 
   .projects-intro::before {
-    width: 1500px;
-
-    height: 1500px;
-
+    width: 950px;
+    height: 950px;
     right: 2%;
-
-    top: -15%;
-
+    top: -10%;
     opacity: 0.55;
   }
 
   .projects-intro::after {
-    width: 1400px;
-
-    height: 1200px;
-
+    width: 900px;
+    height: 800px;
     right: 0;
-
-    top: -20%;
-
+    top: -15%;
     border-color: #c7a77a;
-
     opacity: 0.35;
   }
 
@@ -1759,13 +1704,10 @@ a {
   ======================================================= */
 
   .project-meta {
-    font-size: 1.4rem !important;
-
-    gap: 1rem;
-
-    letter-spacing: 0.15em;
-
-    margin-bottom: 1.2rem;
+    font-size: 1rem !important;
+    gap: 0.8rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 1rem;
   }
 
 
@@ -1774,11 +1716,9 @@ a {
   ======================================================= */
 
   .project-case-btn {
-    font-size: 1.5rem !important;
-
-    letter-spacing: 0.15em;
-
-    gap: 0.8rem;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.12em;
+    gap: 0.7rem;
   }
 
 
@@ -1788,52 +1728,49 @@ a {
 
   .projects-footer {
     max-width: none;
-
     margin: 0;
-
     padding-left: 4vw;
-
     padding-right: 4vw;
-
-    padding-top: 3rem;
-
-    padding-bottom: 4rem;
-
-    font-size: 1.35rem !important;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    font-size: 1rem !important;
   }
 
   .projects-footer a {
-    font-size: 1.35rem !important;
+    font-size: 1rem !important;
   }
+
+
   /* =======================================================
      CASE STUDY MODAL — LARGE DESKTOP
   ======================================================= */
 
   .case-study-dialog {
-    width: min(100%, 1560px);
-    max-height: 95vh;
+    width: min(100%, 1400px);
+    max-height: 92vh;
   }
 
   .modal-title {
-    font-size: clamp(4rem, 5vw, 7rem);
+    font-size: clamp(3.5rem, 5vw, 6rem);
   }
 
   .modal-project-lead {
-    font-size: 1.55rem;
+    font-size: 1.25rem;
     line-height: 1.8;
   }
 
   .modal-section p {
-    font-size: 1.70rem;
+    font-size: 1.25rem;
     line-height: 1.8;
   }
 
   .modal-details p {
-    font-size: 1.10rem;
+    font-size: 1rem;
   }
 
   .modal-section-label,
   .modal-detail-label {
-    font-size: 1.30rem;
+    font-size: 1.1rem;
   }
+
 }

@@ -210,29 +210,37 @@ nav {
 @media (min-width: 1350px) {
 
   nav {
-    padding: 2.5em 4em;
+    padding: 2em 4em;
   }
 
-  /* A ✦ A */
+
+  /* =======================================================
+     LOGO — A ✦ A
+  ======================================================= */
+
   nav .logo .logo-container .mn {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   nav .logo {
-    padding: 0.6em 0.75em;
+    padding: 0.55em 0.6em;
   }
 
-  /* MENU */
+
+  /* =======================================================
+     MENU BUTTON
+  ======================================================= */
+
   nav .menu-toggle-btn {
-    padding: 0.85em 0.95em 0.9em 0.95em;
+    padding: 0.75em 0.85em 0.8em 0.85em;
   }
 
   nav .menu-toggle-btn p {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
   }
 
   nav .menu-toggle-btn-wrapper {
-    height: 1.2rem;
+    height: 1.0rem;
   }
 
 }

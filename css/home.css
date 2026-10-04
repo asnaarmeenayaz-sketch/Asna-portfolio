@@ -1895,369 +1895,300 @@
    LARGE DESKTOP / DELL MONITOR HERO
    1350px+
 ========================================================= */
+/* =========================================================
+   LARGE DESKTOP / DELL MONITOR
+   1350px+
+========================================================= */
 
-@media (min-width: 1365px) {
+@media (min-width: 1350px) {
+
+  /* =========================
+     HOME HERO
+  ========================= */
+
+  .split-hero {
+    padding: 2.5em 2em;
+    gap: 3em;
+  }
+
   .hero-left {
     width: 57%;
-    max-width: 900px;
-    transform: translateX(400px);
+    max-width: 650px;
+    transform: translateX(100px);
   }
 
   .hero-left h1 {
-    font-size:10rem;
+    font-size: clamp(6rem, 7vw, 7rem);
   }
 
   .hero-left p {
-    font-size: 1.9rem;
+    font-size: 1.35rem;
     transform: translateX(10px);
   }
-
-  .split-hero::before {
-    width: 1300px;
-    height: 1200px;
-    right: 3%;
-    top: 4%;
+.hero-right img {
+    width: min(90%, 860px);
+    max-height: 49vh;
+    transform: translateY(-50px);
   }
+
+  .hero-right::before {
+    width: 500px;
+    height: 500px;
+  }
+
+  .hero-right::after {
+    width: 550px;
+    height: 460px;
+  }
+  .split-hero::before {
+  width: 700px;
+  height: 700px;
+  right: 1%;
+  top: 4%;
+}
 
   .split-hero::after {
-    width: 1300px;
-    height: 1200px;
-    right: 1%;
-    top: 16%;
+    width: 650px;
+    height: 600px;
+    right: 0;
+    top: 15%;
   }
- .hero .hero-footer {
-    bottom: 45px;
+
+
+  /* =========================
+     HERO FOOTER
+  ========================= */
+
+  .hero .hero-footer {
+    bottom: 40px;
     left: 0;
     padding: 2em 4em;
   }
 
   .hero .hero-footer .mn {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-   .hero .hero-footer .hero-footer-symbols {
-    height: 1.5rem;
+
+  .hero .hero-footer .hero-footer-symbols {
+    height: 1rem;
   }
-  
-
-.about-hero-header {
-  margin-left: 27%;
-  margin-top: 20em;
-  position: relative;
-  z-index: 2;
-}
-
-.about-hero-header h1 {
-  margin: 0;
-  font-size: 200rem;
-  line-height: 1.40;
-  letter-spacing: -0.001em;
-  font-weight: 1900;
-  color: #171717;
-}
-
-.about-hero-header h1:last-child {
-  color: #c7a77a;
-}
 
 
-/* BIO */
+  /* =========================
+     ABOUT
+  ========================= */
 
-.about-hero-bio {
-  position: relative;
-  z-index: 5;
-  max-width: 1300px;
-  margin-top: -3rem;
-  margin-left: 30%;
-}
-
-.about-hero-bio .ss {
-  position: relative;
-  top: -400px;
-  font-family: "Inter", sans-serif;
-  font-size: 2.97rem;
-  line-height: 1.7;
-  color: #77716a;
-}
-
-.about-hero-bio .mn {
-  margin-top: -1.0em;
-  color: #171717;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.about-hero-bio .mn {
-    font-size: 1.5rem;
+  .about-hero-header {
+    margin-left: 30%;
+    margin-top: 4em;
   }
-/* Soft cream/gold shape */
 
-.about-hero::before {
-  content: "";
-  position: absolute;
-  width: 1400px;
-  height: 1400px;
-  right: 4%;
-  top: 10%;
-  border-radius: 50%;
-  background: #eadfce;
-  opacity: 0.65;
-  z-index: 0;
-}
+  .about-hero-header h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 0.79;
+    letter-spacing: -0.027em;
+    font-weight: 500;
+  }
 
+  .about-hero-bio {
+    max-width: 700px;
+    margin-top: -3rem;
+    margin-left: 30%;
+  }
 
-/* Gold curved line */
-
-.about-hero::after {
-  content: "";
-  position: absolute;
-  width: 1200px;
-  height: 1100px;
-  right: 0;
-  top: 10%;
-  border: 2px solid #c7a77a;
-  border-radius: 50%;
-  transform: rotate(-25deg);
-  opacity: 0.5;
-  z-index: 1;
-}
-
-
-/* Portrait */
-
-.about-hero .about-hero-portrait {
-  position: absolute !important;
-  left: 12% !important;
-  right: auto !important;
-  top: 48% !important;
-  bottom: 0% !important;
-  margin: 0 !important;
-  transform: translateY(-49%) !important;
-  width: 50vw !important;
-  max-width: 700px !important;
-  z-index: 1 !important;
-}
-
-.about-hero .about-hero-portrait img {
-  width: 100% !important;
-  height: 100% !important;
-  overflow: hidden;
-  animation: fadeIn 1.2s ease;
-  transition: transform 0.4s ease;
-  border-radius: 2em;
-}
-
-
-.featured-work .featured-title-wrapper h1 {
-  font-size: clamp(3rem, 6vw, 6.5rem);
-  font-weight: 600;
-  letter-spacing: -0.045em;
-  transition: letter-spacing 0.3s ease;
-}
-
-.featured-work .featured-title-wrapper {
-  padding: 0 3vw;
-}
-
-.featured-title-img {
-  border-radius: 0.5em;
-  border: 1px solid #c7a77a;
-}
-
-.featured-work .featured-work-indicator {
-  width: 3.5rem;
-padding: 1.7rem 0.75rem;
-  border-radius: 8px;
-}
-
-.featured-work .featured-work-footer {
-  padding: 1.5em 3em;
-  border-top: 1px solid rgba(23, 23, 23, 0.12);
-}
-
-.featured-work .featured-work-footer .mn {
-  letter-spacing: 0.08em;
-    font-size: 1.5rem;
-}
-
-.featured-work .featured-work-footer a {
-  text-decoration: none;
+  .about-hero-bio .ss {
+    top: -100px;
     font-size: 1.3rem;
-  border-bottom: 1px solid #c7a77a;
-  padding-bottom: 0.25em;
-}
+    line-height: 1.7;
+  }
 
-.featured-work::before {
-  content: "";
-  position: absolute;
-    width: 1500px;
-    height: 1500px;
-    right: -220px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 1px solid rgba(209, 146, 57, 0.25);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-}
+  .about-hero-bio .mn {
+    margin-top: -1em;
+    font-size: 0.9rem;
+  }
 
-.featured-work .featured-title-wrapper h1 {
-  background: linear-gradient(
-    90deg,
-    #171717 0%,
-    #171717 50%,
-    #c7a77a 50%,
-    #c7a77a 100%
-  );
+  .about-hero::before {
+    width: 700px;
+    height: 700px;
+    right: 2%;
+    top: 4%;
+  }
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  .about-hero::after {
+    width: 700px;
+    height: 650px;
+    right: 0;
+    top: 10%;
+  }
 
-  font-size: clamp(3rem, 6vw, 6rem);
-  letter-spacing: -0.04em;
-  font-weight: 600;
-}
-/* =========================
-   SERVICES HEADER - DELL
-========================= */
-
-.services-header::before {
-  width: 1700px;
-  height: 1700px;
-  right: -50px;
-  top: 1%;
-}
-
-.services-header::after {
-  width: 1400px;
-  height: 1220px;
-  right: -100px;
-  top: 12%;
-}
-
-.services-header .services-header-content {
-  position: relative;
-  z-index: 2;
-}
-
-.services-header .services-profile-icon {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 2.5em;
-}
-
-.services-header .services-header-title {
-  margin-bottom: 5em;
-}
-
-.services-header .services-header-title h1 {
-  font-size: clamp(5rem, 7vw, 8rem);
-  line-height: 0.95;
-}
-
-.services-header .services-header-arrow-icon h1 {
-  font-size: 6rem;
-}
-
-.services-header-description {
-  right: 5vw;
-  bottom: 10vh;
-  width: 340px;
-}
-
-.services-header-description p {
-    font-size: 1.9rem;
-  transform: translateX(10px);
-  margin-top: 1em;
-}
+  .about-hero .about-hero-portrait {
+    left: 11% !important;
+    top: 49% !important;
+    width: 50vw !important;
+    max-width: 300px !important;
+  }
 
 
-.services-list {
-  gap: 2em;
-  margin-top: 1em;
-}
+  /* =========================
+     FEATURED WORK
+  ========================= */
 
-.services-list span {
-  font-size: 0.95rem;
-}
-/* =========================================================
-   CONTACT SECTION - LARGE DESKTOP / DELL MONITOR
-   1350px+
-========================================================= */
+  .featured-work::before {
+    width: 920px;
+    height: 920px;
+    right: -270px;
+  }
+
+  .featured-work .featured-title-wrapper h1 {
+    font-size: clamp(4rem, 6vw, 6.5rem);
+  }
+
+  .featured-work .featured-work-indicator {
+    width: 2.2rem;
+    padding: 1rem 0.2rem;
+  }
+
+  .featured-work .featured-work-footer {
+    padding: 2em 4em;
+  }
+
+  .featured-work .featured-work-footer .mn {
+    font-size: 0.6rem;
+  }
+
+  .featured-work .featured-work-footer a {
+    font-size: 0.7rem;
+  }
 
 
-/* =========================================================
-   CONTACT SECTION - LARGE DESKTOP
-   1350px+
-========================================================= */
+  /* =========================
+     SERVICES HEADER
+  ========================= */
+
+  .services-header::before {
+    width: 950px;
+    height: 950px;
+    right: -80px;
+    top: 5%;
+  }
+
+  .services-header::after {
+    width: 700px;
+    height: 620px;
+    right: -80px;
+    top: 12%;
+  }
+
+  .services-header .services-profile-icon {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 2em;
+  }
+
+  .services-header .services-header-title {
+    margin-bottom: 4em;
+  }
+
+  .services-header .services-header-title h1 {
+    font-size: clamp(4rem, 6vw, 6.5rem);
+    line-height: 0.95;
+  }
+
+  .services-header .services-header-arrow-icon h1 {
+    font-size: 4rem;
+  }
+
+  .services-header-description {
+    right: 5vw;
+    bottom: 10vh;
+    width: 300px;
+  }
+
+  .services-header-description p {
+    font-size: 1.2rem;
+    transform: none;
+  }
+
+  .services-list {
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+
+  .services-list span {
+    font-size: 0.85rem;
+  }
 
 
+  /* =========================
+     CONTACT
+  ========================= */
 
   .contact-section {
-    min-height: 2000px;
-    padding: 10rem 4rem;
+    min-height: 900px;
+    padding: 8rem 4rem;
   }
 
   .contact-decor-circle.c1 {
-    width: 1500px;
-    height: 1500px;
-    right: -350px;
-    top: -300px;
+    width: 900px;
+    height: 900px;
+    right: -300px;
+    top: -250px;
   }
 
   .contact-decor-circle.c2 {
-    width: 1200px;
-    height: 1200px;
-    left: -300px;
-    bottom: -300px;
+    width: 700px;
+    height: 700px;
+    left: -250px;
+    bottom: -250px;
   }
 
   .contact-decor-circle.c3 {
-    width: 960px;
-    height: 960px;
+    width: 500px;
+    height: 500px;
     left: 10%;
     top: 43%;
   }
 
   .contact-content {
-    max-width: 1500px;
+    max-width: 1200px;
   }
 
   .contact-eyebrow {
-    margin-bottom: 2.4rem;
-    font-size: 1.95rem;
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
   }
 
   .contact-heading {
-    margin-bottom: 2.8rem;
-    font-size: clamp(6rem, 8vw, 10rem);
+    margin-bottom: 2.2rem;
+    font-size: clamp(5rem, 7vw, 8rem);
   }
 
   .contact-lead {
-    max-width: 850px;
-    margin-bottom: 4rem;
-    font-size: 1.7rem;
+    max-width: 750px;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
   }
 
   .contact-actions {
-    gap: 1.9rem;
-    margin-bottom: 5rem;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
   }
 
   .btn-primary-gold {
-    padding: 1.3rem 4.7rem;
-    font-size: 2.3rem;
+    padding: 1.1rem 3rem;
+    font-size: 1rem;
   }
 
   .btn-copy-email {
-    padding: 1.3rem 4.7rem;
-     font-size: 2.3rem;
+    padding: 1.1rem 3rem;
+    font-size: 0.95rem;
   }
 
   .contact-meta-row {
-    max-width: 1200px;
-    padding-top: 2.9rem;
-    gap: 1.5rem 5rem;
-    font-size: 1.5rem;
+    max-width: 1100px;
+    padding-top: 2rem;
+    gap: 1rem 3rem;
+    font-size: 0.85rem;
   }
+
 }
