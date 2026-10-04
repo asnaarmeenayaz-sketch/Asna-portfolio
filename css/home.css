@@ -1896,8 +1896,7 @@
    1350px+
 ========================================================= */
 
-@media (min-width: 1350px) {
-
+@media (min-width: 9999px) {
   .hero-left {
     width: 57%;
     max-width: 900px;
