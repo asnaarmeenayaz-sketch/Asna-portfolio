@@ -1,0 +1,433 @@
+/* ===== FOOTER DESIGN ===== */
+
+footer {
+  position: relative;
+  background: #f5f1e9 !important;
+  color: #171717 !important;
+  overflow: hidden;
+}
+
+footer .footer-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cream / beige circle */
+footer::before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 920px;
+  right: -80px;
+  top: 1%;
+  background: #dfcdb5;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 3;
+}
+
+/* Gold curved line */
+footer::after {
+  content: "";
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  right: -80px;
+  top: 5%;
+  border: 2px solid #c7a77a;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  opacity: 0.3;
+  z-index: 3;
+  pointer-events: none;
+}
+/* =========================================================
+   LEFT SIDE CIRCLE
+========================================================= */
+
+footer .footer-container::before {
+  content: "";
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  left: -30px;
+  top: 50%;
+
+  background: #bda88c;
+  border-radius: 50%;
+
+  opacity: 0.2;
+
+  z-index: 0;
+  pointer-events: none;
+}
+/* Gold curved line */
+
+footer .footer-container::after {
+  content: "";
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  left: -80px;
+  top: 50%;
+  border: 2px solid #c7a77a;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  opacity: 0.3;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Footer heading */
+footer .footer-header h1 {
+  color: #9a4343;
+  letter-spacing: -0.055em;
+}
+
+/* Footer headings */
+footer .footer-col p:first-child {
+  color: #aa7d3d;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/* Footer links */
+footer .footer-col a {
+  color: #171717;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .footer-col a:hover {
+  color: #b88236;
+}
+
+/* Copyright */
+footer .copyright-info {
+  border-top: 1px solid rgba(23, 23, 23, 0.15);
+}
+
+footer {
+    position: relative;
+    width: 100vw;
+    height: 85svh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  footer .footer-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fg);
+    padding: 2em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  footer .footer-header {
+    position: relative;
+    text-align: center;
+  }
+  
+  footer .footer-row {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 8em;
+  }
+  
+  footer .footer-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  footer .footer-col a,
+  footer .copyright-info a {
+    color: var(--bg);
+  }
+  
+  footer .footer-col p:not(:first-child) {
+    opacity: 0.35;
+  }
+  
+  footer .copyright-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  
+  footer .footer-symbols {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer .footer-symbols img {
+    width: auto;
+    height: 1rem;
+  }
+  
+  footer .footer-symbols-1 {
+    top: 0;
+  }
+  
+  footer .footer-symbols-2 {
+    bottom: 0;
+  }
+  
+  footer .explosion-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  footer .explosion-particle-img {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    width: 150px;
+    border-radius: 1rem;
+    height: auto;
+    object-fit: cover;
+    transform: translateX(-50%);
+    will-change: transform;
+  }
+  
+  @media (max-width: 1000px) {
+    footer {
+      height: 100svh;
+    }
+  
+    footer .copyright-info {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5em;
+    }
+  
+    footer .copyright-info p:nth-child(2) {
+      display: none;
+    }
+  
+    footer .footer-row {
+      flex-direction: column;
+      margin-bottom: 2em;
+    }
+  
+    footer .footer-row .footer-col:nth-child(2),
+    footer .footer-row .footer-col:nth-child(4) {
+      display: none;
+    }
+  
+    footer .explosion-container {
+      display: none;
+    }
+  }
+  /* =========================================================
+   EXPLOSION ANIMATION - ALL SCREEN SIZES
+========================================================= */
+
+@media (max-width: 1000px) {
+  footer .explosion-container {
+    display: block !important;
+  }
+}
+/* =========================================================
+   FOOTER DECORATIONS - TABLET
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+  /* Right cream circle */
+  footer::before {
+    width: 650px;
+    height: 700px;
+    right: -260px;
+    top: 5%;
+  }
+
+  /* Right curved line */
+  footer::after {
+    width: 520px;
+    height: 520px;
+    right: -220px;
+    top: 10%;
+  }
+
+  /* Left cream circle */
+  footer .footer-container::before {
+    width: 500px;
+    height: 500px;
+    left: -260px;
+    top: 50%;
+  }
+
+  /* Left curved line */
+  footer .footer-container::after {
+    width: 480px;
+    height: 480px;
+    left: -240px;
+    top: 50%;
+  }
+}
+
+
+/* =========================================================
+   FOOTER DECORATIONS - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Right cream circle */
+  footer::before {
+    width: 430px;
+    height: 500px;
+    right: -250px;
+    top: 8%;
+  }
+
+  /* Right curved line */
+  footer::after {
+    width: 350px;
+    height: 400px;
+    right: -210px;
+    top: 12%;
+  }
+
+  /* Left cream circle */
+  footer .footer-container::before {
+    width: 350px;
+    height: 350px;
+    left: -230px;
+    top: 55%;
+  }
+
+  /* Left curved line */
+  footer .footer-container::after {
+    width: 320px;
+    height: 320px;
+    left: -210px;
+    top: 55%;
+  }
+}
+/* =========================================================
+   FOOTER - LARGE DESKTOP / DELL MONITOR
+   1350px+
+========================================================= */
+
+@media (min-width: 1350px) {
+
+  footer {
+    height: 90svh;
+    padding: 3em 4em;
+  }
+
+  footer .footer-container {
+    padding: 3em 4em;
+    border-radius: 2.5em;
+  }
+
+  /* Footer main heading */
+  footer .footer-header h1 {
+    font-size: clamp(5rem, 7vw, 9rem);
+  }
+
+  /* Footer columns */
+  footer .footer-row {
+    gap: 4em;
+    margin-bottom: 10em;
+  }
+
+  footer .footer-col {
+    gap: 1.3em;
+  }
+
+  footer .footer-col p:first-child {
+    font-size: 3.3rem;
+  }
+
+  footer .footer-col a,
+  footer .footer-col p {
+    font-size: 1.39rem;
+    gap: 5em;
+  }
+
+  /* Copyright */
+  footer .copyright-info {
+    font-size: 10rem;
+    gap: 3em;
+  }
+
+  /* Right cream circle */
+  footer::before {
+    width: 1300px;
+    height: 1300px;
+    right: -180px;
+    top: -5%;
+  }
+
+  /* Right gold curved line */
+  footer::after {
+    width: 1050px;
+    height: 1050px;
+    right: -140px;
+    top: 2%;
+  }
+
+  /* Left cream circle */
+  footer .footer-container::before {
+    width: 1000px;
+    height: 1000px;
+    left: -300px;
+    top: 45%;
+  }
+
+  /* Left gold curved line */
+  footer .footer-container::after {
+    width: 900px;
+    height: 900px;
+    left: -260px;
+    top: 48%;
+  }
+
+  /* Footer symbols */
+  footer .footer-symbols {
+    padding: 2.5em 3em;
+  }
+
+  footer .footer-symbols img {
+    height: 2.5rem;
+  }
+/* Footer explosion - Dell / Large Desktop */
+
+
+  footer .explosion-container {
+    height: 240%;
+  }
+
+  footer .explosion-particle-img {
+    width: 500px !important;
+    max-width: none !important;
+    bottom: 50px !important;
+  }
+}

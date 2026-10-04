@@ -1,0 +1,835 @@
+.contact {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: center;
+  background-color: #dac293;
+  color: #171717;
+  overflow: hidden;
+}
+
+/* Soft cream decorative circle */
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -30px;
+  top: 1%;
+  background: #eadfce;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Subtle gold curved line */
+.contact::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  right: -150px;
+  top: 12%;
+  border: 2px solid #b19b76;
+  border-radius: 50%;
+  transform: rotate(-25deg);
+  opacity: 0.45;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ================================
+   TRAIL IMAGES
+================================ */
+
+.contact .trail-img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 0.75em;
+  transform-origin: center;
+  pointer-events: none;
+  will-change: transform;
+  border: 2px solid #835a20;
+  box-shadow: 4px 4px 0px rgba(23, 23, 23, 0.75);
+}
+
+/* ================================
+   LEFT SIDE
+================================ */
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  z-index: 2;
+}
+
+.contact-card-header-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-card-header-main h1 {
+  text-transform: uppercase;
+  font-family: "rader";
+  font-style: italic;
+  line-height: 0.95;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #171717;
+}
+
+.contact-card-header-main p {
+  font-family: "formula-narrow";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #77716a;
+  max-width: 100%;
+}
+
+/* ================================
+   CONTACT INFO
+================================ */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.contact-info-item .label {
+  text-transform: uppercase;
+  font-family: "supply-mono";
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.205;
+  padding: 0.2em 0.4em;
+  border-radius: 0.4em;
+  width: max-content;
+  background-color: #798042;
+  color: #f5f1e9;
+}
+
+.contact-info-item a {
+  font-family: "supply-mono";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #171717;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-info-item a:hover {
+  color: #c7a77a;
+  transform: translateX(8px);
+}
+
+/* ================================
+   FORM CONTAINER
+================================ */
+
+.contact-form-container {
+  background-color: #f5f1e9;
+  border: 1px solid rgba(199, 167, 122, 0.65);
+  border-radius: 1em;
+  padding: 1.25em;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 4px 4px 0px rgba(23, 23, 23, 0.7);
+  height: 650px;
+box-sizing: border-box;
+  max-width: 550px;
+}
+
+/* Very subtle texture */
+.contact-form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent 0px,
+    transparent 8px,
+    rgba(23, 23, 23, 0.015) 8px,
+    rgba(23, 23, 23, 0.015) 16px
+  );
+  pointer-events: none;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  position: relative;
+  z-index: 1;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 0.9em;
+}
+
+.form-header h2 {
+  text-transform: uppercase;
+  font-family: "rader";
+  font-style: italic;
+  line-height: 0.95;
+  font-size: 2.7rem;
+  margin-bottom: 0.8em;
+  color: #171717;
+}
+
+.form-header p {
+  font-family: "formula-narrow";
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #77716a;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8em;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  font-family: "supply-mono";
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.125;
+  color: #77716a;
+  transition: all 0.3s ease;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background-color: #f5f1e9;
+  border: 1px solid rgba(23, 23, 23, 0.3);
+  border-radius: 0.65em;
+    padding: 0.75em 1em;
+  font-size: 0.85rem;
+  color: #171717;
+  font-family: "formula-narrow";
+  font-weight: 600;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-btn {
+  background: #171717;
+  color: #f5f1e9;
+  border: 5px solid #171717;
+  border-radius: 1.5em;
+    padding: 0.75em 2em;
+  margin-top: 0.38em;
+  font-family: "supply-mono";
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #c7a77a;
+}
+/* Gold stripe effect */
+
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+  height: 800%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(199, 167, 122, 0.08) 0px,
+    rgba(199, 167, 122, 0.08) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  animation: stripeMove 20s linear infinite;
+  pointer-events: none;
+}
+
+.submit-btn:hover {
+  background: #c7a77a;
+  color: #171717;
+  border-color: #c7a77a;
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 0px #171717;
+}
+
+.submit-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 0px #171717;
+}
+
+/* ================================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+  background-color: #eadfce;
+  border: 1px solid rgba(199, 167, 122, 0.6);
+  color: #8f953c;
+  padding: 0.75em 1.25em;
+  border-radius: 0.75em;
+  text-align: center;
+  font-family: "formula-narrow";
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.4s ease;
+  margin-top: 0.75em;
+  box-shadow: 3px 3px 0px rgba(23, 23, 23, 0.7);
+}
+
+.success-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================
+   FLOATING ELEMENTS
+================================ */
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-element {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #c7a77a;
+  border-radius: 50%;
+  animation: float 12s infinite linear;
+  opacity: 0.35;
+}
+
+.floating-element:nth-child(2n) {
+  background-color: #eadfce;
+}
+
+.floating-element:nth-child(3n) {
+  background-color: #ce9647;
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.35;
+  }
+
+  90% {
+    opacity: 0.35;
+  }
+
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes stripeMove {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1200px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 1.5em 1em;
+  }
+
+  .contact-card-header-main p {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================================
+   LAPTOP
+   1001px - 1200px
+========================================================= */
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+
+  .contact {
+    min-height: 100vh;
+    padding: 2.5em 2em;
+
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(400px, 500px);
+
+    gap: 2em;
+  }
+
+  .contact::before {
+    width: 650px;
+    height: 650px;
+    right: -100px;
+    top: 2%;
+  }
+
+  .contact::after {
+    width: 650px;
+    height: 650px;
+    right: -180px;
+    top: 12%;
+  }
+
+  .contact-card-header-main h1 {
+    font-size: clamp(2.7rem, 5vw, 4rem);
+  }
+
+  .contact-card-header-main p {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 740px;
+
+    padding: 1.35em;
+
+    justify-self: end;
+  }
+
+  .form-header h2 {
+    font-size: 2.5rem;
+  }
+}
+/* =========================================================
+   LARGE DESKTOP / BIG MONITOR
+   1350px+
+========================================================= */
+
+@media (min-width: 1350px) {
+
+  .contact {
+  min-height: 100vh;
+  padding: 4em 6em;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(800px, 1100px);
+
+  gap: 6em;
+}
+
+  /* Bigger decorative background */
+
+  .contact::before {
+    width: 1300px;
+    height: 1300px;
+    right: -10px;
+    top: -0.8%;
+  }
+
+  /* Bigger decorative curve */
+
+  .contact::after {
+    width: 1300px;
+    height: 1300px;
+    right: -10px;
+    top: 7%;
+  }
+
+  /* Bigger left content */
+
+  .contact-card-header-main h1 {
+    font-size: 13rem;
+  }
+
+  .contact-card-header-main p {
+    max-width: 1300px;
+    font-size: 1.69rem;
+    line-height: 1.9;
+
+  }
+
+  .contact-left {
+    gap: 4em;
+  }
+
+  .contact-info {
+    margin-top: 3em;
+    gap: 1.35em;
+  }
+
+  .contact-info-item .label {
+    font-size: 1.95rem;
+  }
+
+  .contact-info-item a {
+    font-size: 1.55rem;
+  }
+
+  /* Bigger form */
+
+   /* BIGGER FORM CONTAINER */
+
+  .contact-form-container {
+    width: 100%;
+max-width: 1250px;
+
+min-height: 1300px;
+    height: auto;
+
+    padding: 3em;
+
+    box-sizing: border-box;
+    border-radius: 1.5em;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+    justify-self: end;
+
+    /* Keep your current position */
+    right: 900px;
+  }
+
+
+  /* BIGGER FORM CONTENT */
+
+  .form-header {
+    margin-bottom: 2em;
+  }
+
+  .form-header h2 {
+    font-size: 5rem;
+    margin-bottom: 0.8em;
+  }
+
+  .form-header p {
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+
+  .form-row {
+    gap: 1.5em;
+  }
+
+  .form-group {
+    gap: 0.9em;
+  }
+
+  .form-group label {
+    font-size: 1.25rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    padding: 1.2em 1.35em;
+    font-size: 1.15rem;
+  }
+
+  .form-group textarea {
+    min-height: 180px;
+  }
+
+  .submit-btn {
+    padding: 1.2em 3em;
+    font-size: 1rem;
+  }
+  /* Bigger trail images */
+
+  .contact .trail-img {
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+
+  .contact {
+    min-height: 100vh;
+    padding: 2em 1.5em;
+grid-template-columns: minmax(0, 1fr) minmax(360px, 440px);
+    gap: 1.5em;
+
+    align-items: center;
+  }
+
+
+  /* BACKGROUND */
+
+  .contact::before {
+    width: 550px;
+    height: 550px;
+    right: -120px;
+    top: 5%;
+  }
+
+  .contact::after {
+    width: 550px;
+    height: 550px;
+    right: -180px;
+    top: 13%;
+  }
+
+
+  /* LEFT CONTENT */
+
+  .contact-left {
+    width: 100%;
+    max-width: none;
+    gap: 1.25em;
+  }
+
+  .contact-card-header-main h1 {
+    font-size: clamp(2.2rem, 5vw, 3.3rem);
+  }
+
+  .contact-card-header-main p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 100%;
+  }
+
+  .contact-info {
+    margin-top: 1em;
+  }
+
+  .contact-info-item a {
+    font-size: 0.75rem;
+  }
+
+
+  /* FORM CONTAINER */
+  /* FORM CONTAINER */
+
+  .contact-form-container {
+    width: 100%;
+    max-width: 400px;
+
+    min-height: 0;
+    height: auto;
+
+    padding: 1em;
+transform: translateX(-20px);
+    margin: 0;
+    box-sizing: border-box;
+justify-self: start;
+    align-self: center;
+
+    position: relative;
+
+  
+  }
+
+
+  /* FORM CONTENT */
+
+  .form-header {
+    margin-bottom: 0.8em;
+  }
+
+  .form-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.4em;
+  }
+
+  .form-header p {
+    font-size: 0.72rem;
+    line-height: 1.3;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+  }
+
+  .form-group {
+    gap: 0.35em;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+  .form-group label {
+    font-size: 0.68rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 0.75rem;
+    padding: 0.55em 0.7em;
+  }
+
+  .form-group textarea {
+    min-height: 65px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 0.7em 1.5em;
+    font-size: 0.75rem;
+  }
+}
+/* =========================================================
+   MOBILE
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1em;
+    gap: 1.5em;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  /* BACKGROUND */
+
+  .contact::before {
+    width: 520px;
+    height: 520px;
+    right: -100px;
+    top: 15%;
+  }
+
+  .contact::after {
+    width: 580px;
+    height: 450px;
+    right: -150px;
+    top: 18%;
+  }
+
+  /* LEFT CONTENT */
+
+  .contact-left {
+    width: 100%;
+    gap: 1.25em;
+  }
+
+  .contact-card-header-main h1 {
+    font-size: clamp(1.75rem, 8vw, 2rem);
+  }
+
+  .contact-card-header-main p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* FORM */
+
+  .contact-form-container {
+    width: 100%;
+    max-width: 450px;
+    min-height: 0;
+    height: auto;
+    padding: 1.5em;
+    margin: 0 auto;
+    border-radius: 1em;
+    justify-self: center;
+  }
+
+  .form-header h2 {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+
+  .form-header p {
+    font-size: 0.8rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.75em;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 0.8rem;
+    padding: 0.7em 0.85em;
+  }
+
+  .form-group textarea {
+    min-height: 80px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
