@@ -449,13 +449,13 @@
     top: clamp(20%, 25vw, 25%);
   }
 
- .about-hero .about-hero-portrait {
+.about-hero .about-hero-portrait {
   left: 50% !important;
   top: 32% !important;
   bottom: auto !important;
   transform: translateX(-50%) !important;
-  width: 190px !important;
-  max-width: 190px !important;
+  width: 150px !important;
+  max-width: 150px !important;
   z-index: 0 !important;
 }
 }
