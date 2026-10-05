@@ -436,26 +436,26 @@
   }
 
   .about-hero::before {
-    width: clamp(590px, 89vw, 680px);
-    height: clamp(590px, 89vw, 670px);
+    width: clamp(470px, 89vw, 680px);
+    height: clamp(470px, 89vw, 670px);
     right: clamp(-10%, -20vw, -20%);
-    top: clamp(10%, 20vw, 20%);
+    top: clamp(18%, 20vw, 20%);
   }
 
   .about-hero::after {
-    width: clamp(550px, 82vw, 730px);
-    height: clamp(520px, 75vw, 680px);
-  right: clamp(-10%, -20vw, -20%);
+    width: clamp(450px, 82vw, 530px);
+    height: clamp(420px, 75vw, 580px);
+  right: clamp(-10%, -20vw, -70%);
     top: clamp(20%, 25vw, 25%);
   }
 
-  .about-hero .about-hero-portrait {
-    left: 50% !important;
-   top: clamp(33%, 37vw, 55%) !important;
-    bottom: clamp(-4%, -2vw, -1%) !important;
-    transform: translateX(-50%) !important;
-    width: clamp(190px, 70vw, 300px) !important;
-    max-width: 170px !important;
-    z-index: 0 !important;
-  }
+ .about-hero .about-hero-portrait {
+  left: 50% !important;
+  top: 32% !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  z-index: 0 !important;
+}
 }

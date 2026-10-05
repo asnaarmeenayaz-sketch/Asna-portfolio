@@ -105,10 +105,17 @@ footer .footer-col a:hover {
 }
 
 /* Copyright */
+/* Copyright */
 footer .copyright-info {
-  border-top: 1px solid rgba(23, 23, 23, 0.15);
+  border-top: 1px solid rgba(245, 241, 233, 0.2);
+  color: #f5f1e9;
 }
 
+footer .copyright-info p,
+footer .copyright-info a {
+  color: #f5f1e9 !important;
+  opacity: 1 !important;
+}
 footer {
     position: relative;
     width: 100vw;
