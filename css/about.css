@@ -255,9 +255,7 @@
   }
 
   .about-hero-header h1 {
-
-  font-size: clamp(5rem, 8vw, 10rem) !important;
-
+  font-size: 5.9rem !important;
   }
 
 .about-hero-bio {
@@ -302,43 +300,46 @@
 @media (min-width: 1130px) and (max-width: 1349px) {
 
   .about-hero-header {
-    margin-left: 43%;
-    margin-top: -2em;
+    margin-left: 45%;
+    margin-top: -3em;
   }
 
   .about-hero-header h1 {
-    font-size: 7rem !important;
+  font-size: 5.9rem !important;
   }
 
   .about-hero-bio {
     max-width: 600px;
-    margin-left: 43%;
+    margin-left: 42%;
     margin-top: -6rem;
   }
 
   .about-hero-bio .ss {
-    top: -195px;
-    font-size: 1.20rem;
+    top: -70px;
+    font-size: 1rem;
   }
+   .about-hero-bio .mn {
+  transform: translateY(50px);
+}
   .about-hero::before {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     right: -3%;
     top: 8%;
   }
 
   .about-hero::after {
-    width: 700px;
-    height: 620px;
+    width: 590px;
+    height: 500px;
     right: -4%;
     top: 8%;
   }
 
   .about-hero .about-hero-portrait {
     left: 7% !important;
-    top: 48% !important;
-    width: 28vw !important;
-    max-width: 520px !important;
+    top: 49% !important;
+    width: 22vw !important;
+    max-width: 500px !important;
     z-index: 0 !important;
   }
 }

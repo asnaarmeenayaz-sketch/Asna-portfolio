@@ -337,3 +337,76 @@ footer {
     top: 55%;
   }
 }
+/* =========================================================
+   FOOTER - LAPTOP
+   1001px - 1349px
+========================================================= */
+
+@media (min-width: 1001px) and (max-width: 1349px) {
+
+  footer {
+    height: 85svh;
+    padding: 1.5em;
+  }
+ footer .footer-header h1 {
+    font-size: clamp(3rem, 5vw, 4.5rem);
+  }
+
+  footer .footer-col p:first-child {
+    font-size: 0.75rem;
+  }
+
+  footer .footer-col p:not(:first-child),
+  footer .footer-col a {
+    font-size: 0.9rem;
+  }
+
+  footer .copyright-info {
+    font-size: 0.7rem;
+  }
+  footer .footer-container {
+    padding: 1.5em;
+    border-radius: 1.5em;
+  }
+
+  footer .footer-row {
+    gap: 1.5em;
+    margin-bottom: 5em;
+  }
+
+  footer .footer-col {
+    gap: 0.8em;
+  }
+
+  /* Right cream circle */
+  footer::before {
+    width: 550px;
+    height: 580px;
+    right: -180px;
+    top: 3%;
+  }
+
+  /* Right gold curved line */
+  footer::after {
+    width: 540px;
+    height: 540px;
+    right: -160px;
+    top: 8%;
+  }
+
+  /* Left cream circle */
+  footer .footer-container::before {
+    width: 500px;
+    height: 500px;
+    left: -180px;
+    top: 50%;
+  }
+
+  /* Left gold curved line */
+  footer .footer-container::after {
+    width: 470px;
+    height: 470px;
+    left: -180px;
+    top: 50%;
+  }
+}

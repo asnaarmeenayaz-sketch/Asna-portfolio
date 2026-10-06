@@ -421,20 +421,10 @@
   color: var(--muted);
 }
 
-@media (min-width: 1001px) {
-  .hero-left {
-    transform: translateX(200px);
-  }
 
-  .hero-left p {
-    font-size: 1.4rem;
-    transform: translateX(30px);
-  }
-  
-}
 /* =========================================================
    SMALL DESKTOP / LAPTOP HERO
-   1001px - 1200px
+   1001px - 1349px
    Mobile completely unchanged
 ========================================================= */
 
@@ -452,11 +442,11 @@
   }
 
   .hero-left h1 {
-    font-size: clamp(3.8rem, 7vw, 6.5rem);
-  }
+  font-size: clamp(3.4rem, 6vw, 5.8rem);
+}
 
   .hero-left p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     transform: translateX(10px);
   }
 
@@ -467,33 +457,22 @@
   .hero-right img {
     width: min(90%, 200px);
     max-height: 60vh;
-  }
-
-  /* 1st circle — beige filled circle behind image */
-  .hero-right::before {
-    width: 430px !important;
-    height: 590px !important;
-  }
-
-  /* 2nd circle — gold outline around image */
-  .hero-right::after {
-    width: 460px !important;
-    height: 520px !important;
+    
   }
 
   /* Large gold curved line on hero background */
-  .split-hero::after {
-    width: 480px;
-    height: 580px;
-    right: -10%;
-    top: 13%;
-  }
+.split-hero::after {
+  width: 440px;
+  height: 400px;
+  right: -10%;
+  top: 12%;
+}
   .split-hero::before {
-    width: 500px;
-    height: 600px;
-    right: -5%;
-    top: 7%;
-  }
+  width: 450px;
+  height: 490px;
+  right: -5%;
+  top: 7%;
+}
 }
 
 /* RIGHT */
@@ -522,7 +501,7 @@
   height: auto;
   image-rendering: auto;
   object-fit: contain;
-  transform: translateY(-100px);
+  transform: translateY(-70px);
   border-radius: 0;
   box-shadow: none;
   animation: fadeIn 1.2s ease;
@@ -539,11 +518,11 @@
 .hero-right::before {
   content: "";
   position: absolute;
-  width: 720px;
-  height: 920px;
+width: 340px !important;
+  height: 430px !important;
   background: #e4d4bd;
   border-radius: 48% 52% 45% 55%;
-  transform: rotate(19deg);
+  transform: rotate(30deg);
   z-index: 1;
 }
 
@@ -553,8 +532,8 @@
 .hero-right::after {
   content: "";
   position: absolute;
-  width: 700px;
-  height: 760px;
+width: 420px !important;
+  height: 400px !important;
   border: 2px solid var(--accent1);
   border-radius: 50%;
   transform: rotate(-25deg);
@@ -569,12 +548,12 @@
   margin-top: 2em;
   display: inline-block;
   border: 1.5px solid var(--accent1);
-  border-radius: 3px;
+  border-radius: 2px;
   background: transparent;
   color: var(--fg);
   text-decoration: none;
   font-family: "Inter", sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   transition: all 0.3s ease;
 }
@@ -898,7 +877,7 @@
   letter-spacing: -0.04em;
   font-weight: 600;
 }
-@media (min-width: 1201px) {
+@media (min-width: 1350px) {
 
   .featured-work::before {
     width: 920px;
@@ -1791,7 +1770,44 @@
 
 }
 
+/* =========================================================
+   FEATURED WORK - LAPTOP
+   1001px - 1349px
+========================================================= */
 
+@media (min-width: 1001px) and (max-width: 1349px) {
+
+  .featured-work .featured-title-wrapper h1 {
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  }
+
+  .featured-work .featured-title-wrapper {
+    padding: 0 2vw;
+  }
+
+  .featured-work::before {
+    width: 500px;
+    height: 490px;
+    right: -220px;
+  }
+
+  .featured-work .featured-work-indicator {
+    width: 2rem;
+    padding: 1.1rem 0.45rem;
+  }
+
+  .featured-work .featured-work-footer {
+    padding: 1.5em 2.5em;
+  }
+
+  .featured-work .featured-work-footer .mn {
+    font-size: 0.65rem;
+  }
+
+  .featured-work .featured-work-footer a {
+    font-size: 0.75rem;
+  }
+}
 /* =========================================================
    DESKTOP SHORT-HEIGHT SERVICES
 ========================================================= */
